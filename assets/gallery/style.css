@@ -221,6 +221,21 @@
     margin-top: 0;
     top: auto;
     z-index: 17; } }
+    .carousel-inner > .item {
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      position: absolute;
+    }
+    .carousel-inner > .item {
+      transform: translate3d(0,0,0) !important;
+    }
+    .carousel-inner > .item :first-of-type {
+      position: relative;
+    }
+
 .mbr-gallery .mbr-slider .carousel-inner > .active {
   display: block; }
 
