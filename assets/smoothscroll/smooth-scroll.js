@@ -555,7 +555,7 @@ function overflowAutoOrScroll(el) {
  ***********************************************/
 
 function addEvent(type, fn) {
-    window.addEventListener(type, fn, false);
+    window.addEventListener(type, fn, true);
 }
 
 function removeEvent(type, fn) {
