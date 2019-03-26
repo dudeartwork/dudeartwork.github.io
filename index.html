@@ -17,7 +17,7 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('/serviceworker.js')
-                .then(function () { console.log("Service Worker Registered"); });
+                .then(function () {});
         }
     </script>
     <meta charset="UTF-8">
@@ -748,7 +748,6 @@
     <script src="assets/formoid/formoid.min.js"></script>
     <script>
         gtag('set', { 'user_id': 'Name' }); // Set the user ID using signed-in user_id.
-        ga('set', 'userId', 'Name'); // Set the user ID using signed-in user_id.
     </script>
 
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
