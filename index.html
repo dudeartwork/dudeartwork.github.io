@@ -13,7 +13,13 @@
     </script>
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color">
-    <!-- Site made with Mobirise Website Builder v4.9.6, https://mobirise.com -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/serviceworker.js')
+                .then(function () { console.log("Service Worker Registered"); });
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Mobirise v4.9.6, mobirise.com">
