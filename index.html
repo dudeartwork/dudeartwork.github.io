@@ -253,19 +253,7 @@
     </section>
 
     <div id="galleryId">
-        <Gallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-            {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-                <Carousel currentIndex={currentImage} views={photos.map(x=> ({
-                    ...x,
-                    srcset: x.srcSet,
-                    caption: x.title
-                    }))}
-                    />
-            </Modal>
-            ) : null}
-        </ModalGateway>
+        
     </div>
 
     <section class="timeline1 cid-rlCxprpsF1 mbr-parallax-background" id="timeline1-j">
